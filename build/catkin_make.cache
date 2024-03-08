@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/raphael/Documents/Project/workspace/devel -DCMAKE_INSTALL_PREFIX=/home/raphael/Documents/Project/workspace/install -G Unix Makefiles
