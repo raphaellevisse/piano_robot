@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/raphael/Documents/Project/workspace/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/raphael/Documents/Project/workspace/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/raphael/Documents/Project/workspace/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/raphael/Documents/Project/workspace/src:$ROS_PACKAGE_PATH"

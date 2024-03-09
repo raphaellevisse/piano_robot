@@ -489,3 +489,58 @@ make[1]: Leaving directory '/home/raphael/Documents/Project/workspace/build/CMak
 
 
 
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_04f6e/fast && /usr/bin/make -f CMakeFiles/cmTC_04f6e.dir/build.make CMakeFiles/cmTC_04f6e.dir/build
+make[1]: Entering directory '/home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_04f6e.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_04f6e.dir/CheckIncludeFile.c.o   -c /home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_04f6e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04f6e.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_04f6e.dir/CheckIncludeFile.c.o  -o cmTC_04f6e 
+make[1]: Leaving directory '/home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the drand48 exist passed with the following output:
+Change Dir: /home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_695a6/fast && /usr/bin/make -f CMakeFiles/cmTC_695a6.dir/build.make CMakeFiles/cmTC_695a6.dir/build
+make[1]: Entering directory '/home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_695a6.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_695a6.dir/CheckSymbolExists.c.o   -c /home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_695a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_695a6.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_695a6.dir/CheckSymbolExists.c.o  -o cmTC_695a6 
+make[1]: Leaving directory '/home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp'
+
+
+File /home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef drand48
+  return ((int*)(&drand48))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_63ece/fast && /usr/bin/make -f CMakeFiles/cmTC_63ece.dir/build.make CMakeFiles/cmTC_63ece.dir/build
+make[1]: Entering directory '/home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_63ece.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_63ece.dir/CheckIncludeFile.c.o   -c /home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_63ece
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63ece.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_63ece.dir/CheckIncludeFile.c.o  -o cmTC_63ece 
+make[1]: Leaving directory '/home/raphael/Documents/Project/workspace/build/CMakeFiles/CMakeTmp'
+
+
+

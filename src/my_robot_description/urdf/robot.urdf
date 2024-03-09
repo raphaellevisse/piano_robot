@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<robot name="simple_diff_drive_robot">
+
+  <!-- Chassis -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <box size="0.5 0.3 0.2"/> <!-- Adjust size to fit your robot -->
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.5 0.3 0.2"/> <!-- Same as visual for simplicity -->
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Left Wheel -->
+  <link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.1"/> <!-- Adjust size to fit your robot -->
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.1" radius="0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Left Wheel Joint -->
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <origin xyz="-0.15 0.2 0" rpy="0 0 0"/> <!-- Adjust position relative to base_link -->
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- Right Wheel -->
+  <link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.1"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.1" radius="0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- Right Wheel Joint -->
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <origin xyz="-0.15 -0.2 0" rpy="0 0 0"/> <!-- Adjust position relative to base_link -->
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- LIDAR Sensor -->
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.05"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- LIDAR Mount Joint -->
+  <joint name="lidar_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0 0 0.15" rpy="0 0 0"/> <!-- Adjust position on top of the robot -->
+  </joint>
+
+</robot>

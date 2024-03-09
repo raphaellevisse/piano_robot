@@ -1,0 +1,8 @@
+prefix=/home/raphael/Documents/Project/workspace/install
+
+Name: my_robot_description
+Description: Description of my_robot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
